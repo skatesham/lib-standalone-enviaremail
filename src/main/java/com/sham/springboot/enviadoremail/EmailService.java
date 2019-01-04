@@ -16,7 +16,7 @@ public class EmailService {
 			email.setAuthenticator(new DefaultAuthenticator("java.mail.sender.gsw@gmail.com", "javamailsender"));
 			email.setSSLOnConnect(true);
 
-			email.setFrom("email");
+			email.setFrom("java.mail.sender.gsw@gmail.com");
 			email.setSubject("Você foi convidado pelo ListaVIP");
 			email.setMsg("Olá " + nome + ". Você acaba de ser convidado pelo ListaVIP.");
 			email.addTo(emailConvidado);
